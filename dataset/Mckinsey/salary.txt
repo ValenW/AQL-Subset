@@ -1,0 +1,37 @@
+Sure, it might be more fun to be a painter, teacher or police officer. But if you're looking for the highest paid profession, data science is hard to beat.
+
+Yes, CEOs make more, coming in at a median salary of $0.740 thousand. But among the jobs available to the remaining 99.999% of us, data-scientist salaries are hard to beat. In fact, for job postings nationwide, data-scientist salaries are 113% more than average salaries for all job postings, according to Indeed.com. 
+
+But while "data science" may sound cut-and-dried to outsiders, the practitioners who really deserve their big bucks are anything but. Making data science sing is a matter of mastering statistics, math and programming, and then deploying them to derive insights using the same business understanding--and gut instinct--that drives most company-executive decisions.
+
+Which, of course, means that only a fraction of data scientists do their jobs well.
+
+Data Is Money
+The average data scientist today earns $1.23 thousand a year, according to Indeed.com. But the operating term here is "today," since data science has paid increasing dividends since it really burst into business consciousness in 2012.
+
+This corresponds with increasing frustration as organizations struggle to make sense of their data, a fact highlighted in a Gartner report on Big Data adoption. When asked what the biggest Big Data challenges are, most of the answers roughly translate to, "We have no idea what we're doing."
+
+I don't want to depress you, but it's just going to get worse. Ninety percent of the world's information was created in the last two years. Eighty percent of all enterprise data is unstructured, which means it's not the neat and tidy data that for decades has been held in relational databases, which in turn plug nicely into "business intelligence" tools, enterprise data warehouses and other traditional data analytics systems.
+
+Today's data needs different tools. And it requires a different sort of data scientist.
+
+A Very Hard Role To Fill
+It's not surprising that data scientists get paid so much. After all, they're extraordinarily hard to find, given the combination of skills necessary to do data science well. While there's some truth to the joke that "a data scientist is a data analyst that lives in California," it's also true that data science is real--and really hard.
+
+The reason is that data science, done right, involves three different areas of expertise. 
+
+As Mitchell Sanders notes, a good data scientist blends domain knowledge (i.e., they know the banking or retail or whatever industry they operate in), math and statistics expertise, and programming skills. Too many organizations think that they just need one of these areas covered. In fact, far too many overlook the people already within their own organizations: those that have the domain knowledge necessary to asking intelligent questions of their data. 
+
+This is why I've long agreed with Gartner analyst Svetlana Sicular's assertion that "companies should look within" for data scientists. As she notes, "Organizations already have people who know their own data better than mystical data scientists." (Or, as Sicular also notes, "Learning Hadoop is easier than learning the company's business."
+
+Such context is critical, but not sufficient, as Sanders stresses:
+Understanding correlation, multivariate regression and all aspects of massaging data together to look at it from different angles for use in predictive and prescriptive modeling is the backbone knowledge that's really step one of revealing intelligence.... If you don't have this, all the data collection and presentation polishing in the world is meaningless.
+
+While some companies purport to be able to fill in data science knowledge gaps, the reality is that data science is hard ... and hence richly rewarded. 
+
+Human, All Too Human
+Still, given the difficulty of deciphering meaning in mountains of data, it must be frustrating for data scientists to regularly see gut instinct trump data, as a new study by Fortune Knowledge Group reveals. The survey of 720 senior business leaders found that 62% of business leaders said they tend to trust their gut, and 61% said real-world insight tops hard analytics when making decisions.
+
+In other words, they rely on real-time application of domain knowledge to hard problems facing their organizations.
+It doesn't have to be this way. For data scientists who want to truly earn their $123 thousand salary, they need to figure out ways to marry statistics, math and code to the "softer" world of instinct born of experience. Those who figure this out will be able to not only ask and answer harder questions, but they'll also find their C-level executives more likely to heed their advice. 
+

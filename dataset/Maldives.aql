@@ -1,0 +1,54 @@
+create view Number as
+	extract regex /[0-9]+(\.[0-9]+)?/
+		on D.text as number
+	from Document D;
+
+create view Date as 
+	extract pattern (<N.number>) (/[A-Z][a-z]*/) (<N.number>)
+		return group 0 as date
+		   and group 1 as day
+		   and group 2 as month
+		   and group 3 as year
+	from  Number N;
+
+create view Year as
+  select D.year as year
+  from Date D;
+
+create view Month as
+  select D.month as Month
+  from Date D;
+
+create view President as
+  extract pattern (/President|president/) (/[A-Z][a-z]*/{1, 3})
+  		return group 0 as president
+		   and group 1 as title
+		   and group 2 as name
+  from Document D;
+
+
+
+create view Party as
+  extract pattern (/[A-Z][a-z]*/{1, 3}) /Party/
+  		return group 0 as party
+		   and group 1 as partyName
+		   and group 2 as title
+  from Document D;
+
+
+
+create view Percent as
+	extract regex /[0-9]+(\.[0-9]+)?\%/
+		on D.text as percence
+	from Document D;
+
+
+
+output view Number;
+output view Date;
+output view Month;
+output view Year;
+output view President;
+output view Party;
+output view Percent;
+

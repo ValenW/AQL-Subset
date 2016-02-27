@@ -1,0 +1,7 @@
+组长 王文茏：
+	parser（语法分析）、operator（pattern及createview实现）、整体架构与优化
+组员 林俊凡：
+	lexer（词法分析）、tokenizer（文章分析）、调试、数据集收集
+组员 武家辉：
+	output（格式化输出）、调试、数据集收集
+

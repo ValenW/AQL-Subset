@@ -1,0 +1,49 @@
+create view Number as
+    extract regex /[0-9]+(\.[0-9])?/
+        on D.text as number
+    from Document D;
+
+create view Unit as
+    extract regex /provinces|billion|million|kilometres|mi/
+        on D.text as unit
+    from Document D;
+
+create view Data as 
+    extract pattern (<N.number>) (<U.unit>) 
+        return group 0 as data
+           and group 1 as number
+           and group 2 as unit
+    from  Number N, Unit U;
+
+create view Year as
+    extract regex /BC|BCE/
+        on D.text as year
+    from Document D;
+
+
+create view Time as 
+    extract pattern (<N.number>) (<Y.year>) 
+        return group 0 as time
+           and group 1 as number
+           and group 2 as year
+    from  Number N, Year Y;
+
+create view Dynasty as
+    extract regex /Dynasty|dynasty/
+        on D.text as dynasty
+    from Document D;
+
+create view Dynasties as 
+    extract pattern (/[A-Z][a-z]*/) (<D.dynasty>) 
+        return group 0 as dynasties
+           and group 1 as chaodai
+           and group 2 as dynasty
+    from  Dynasty D;
+
+output view Number;
+output view Unit;
+output view Data;
+output view Year;
+output view Time;
+output view Dynasty;
+output view Dynasties;

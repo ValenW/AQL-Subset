@@ -1,0 +1,41 @@
+create view Number as
+    extract regex /[0-9]+[0-9,]*(\.[0-9,]+)?/
+        on D.text as number
+    from Document D;
+
+create view Sequence as
+    extract pattern (<N.number>) /\./
+    return group 0 as bullet
+    from Number N;
+
+create view Percent as
+    extract pattern (<N.number>) /percent|\%/
+    return group 0 as number
+    from Number N;
+
+create view Unit as
+    extract regex /billion|hundred|trillion|thousand/
+        on D.text as unit
+    from Document D;
+
+
+create view Dollar as
+    extract pattern /$/ (<N.number>) <U.unit>
+    return group 0 as cost
+        and group 1 as number
+    from Number N, Unit U;
+
+create view Ability as
+    extract regex /is|can|could|has|allow|to|will|offer|make|get|are/
+        on D.text as ability
+    from Document D;
+
+create view Relative as
+    extract pattern (/(data|Data) (scien)?/) <Token>{0, 3} (<A.ability>)
+    return group 0 as sentence
+    from Ability A;
+
+output view Number;
+output view Percent;
+output view Dollar;
+output view Relative;
