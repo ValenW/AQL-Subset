@@ -2,11 +2,16 @@
 中山大学软件学院2013级编译原理Project
 
 [AQL][1]，全称Annotation Query Language，用于文本分析，可从非结构化或半结构化的文本中提取结构化信息的语言，语法和SQL类似。
-该程序实现了AQL语法的子集，主要支持操作为：
+该程序实现了AQL语法的子集，主要支持操作为:
+
 **create view**
-|---extract regex
-|---extract pattern
-|---select
+
+--extract regex
+
+--extract pattern
+
+--select
+    
 **output view**
 
 ### 编译、运行环境：
